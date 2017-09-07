@@ -1,15 +1,22 @@
 # Exercicio1
 
-Report de Atividades
+# Report de Atividades
 
-Referente as alteraÁıes descritas no documento ìTeste-NetShoesî foi detectada a necessidade de criaÁ„o de um Windows form simples para salvar informaÁıes pertinentes a NFe. O Form contÈm os seguintes campos: Nome, UF Origem, UF Destino, Nome Produto, CÛdigo Produto, Valor e uma flag Brinde.
-A primeira etapa do desenvolvimento consistiu em efetuar a serializaÁ„o da classe NotaFiscal para que todas as informaÁıes contidas no objeto fossem convertidas para XML, inclusive os itens da NotaFiscal. Foi criada uma chave no appconfig para definir o path onde o XML dever· ser salvo seguindo instruÁıes contidas no documento.
-Na classe NotaFiscalRepository foram adicionados os mÈtodos para salvar a NotaFiscal.  Foi criada a classe NotaFiscalItemRepository para salvar os Itens utilizando as procedures anexadas no projeto. Por se tratar de uma aplicaÁ„o simples os mÈtodos foram implementados com SqlConnection e SqlCommand para execuÁ„o das chamadas, a interface IDisposable foi implementada garantindo o fechamento das conexıes apÛs utilizaÁ„o.
-Novos campos foram criados na aplicaÁ„o, com os seguintes nomes: BaseIPI, AliquotaIPI, ValorIPI e Desconto, todos com suas regras de preenchimento de acordo com a documentaÁ„o fornecida. TambÈm foi criado o campo Valor na tabela NotaFiscalItens, este campo existia na aplicaÁ„o mas n„o era salvo no BD, portanto, tratava-se de um bug na aplicaÁ„o.
-Conforme documentaÁ„o foi implementado o relatÛrio P_REL_NOTA_FISCAL que exibe a soma dos campos solicitados, agrupados por CFOP.
-Foram realizadas algumas melhorias como a limpeza dos campos ao gerar o XML e tambÈm a validaÁ„o do preenchimento das informaÁıes. Os campos relacionados a UF foram substituÌdos por combos para facilitar o preenchimento.
-Para preenchimento e validaÁ„o das informaÁıes referentes a UF foi criada uma classe auxiliar com um enum para facilitar a visualizaÁ„o dos estados em quest„o, alÈm de ser utilizado para o preenchimento das combos.
-Os mÈtodos foram remanejados separando um pouco a responsabilidade do preenchimento das informaÁıes, devido ao tamanho do projeto n„o achei necess·rio a separaÁ„o em camadas, mas em uma possÌvel refatoraÁ„o seria interessante.
-Por fim, foram detectados 2 bugs na aplicaÁ„o, um deles referente a alimentaÁ„o das UFs de destino e origem que estavam trocados e outro referente aos itens da nota que n„o eram adicionados na lista da classe NotaFiscal, ambos foram corrigidos.
-N„o foi realizada a implementaÁ„o de testes unit·rios para a aplicaÁ„o.  
+Referente as altera√ß√µes descritas no documento ‚ÄúTeste-NetShoes‚Äù foi detectada a necessidade de cria√ß√£o de um Windows form simples para salvar informa√ß√µes pertinentes a NFe. O Form cont√©m os seguintes campos: Nome, UF Origem, UF Destino, Nome Produto, C√≥digo Produto, Valor e uma flag Brinde.
 
+A primeira etapa do desenvolvimento consistiu em efetuar a serializa√ß√£o da classe NotaFiscal para que todas as informa√ß√µes contidas no objeto fossem convertidas para XML, inclusive os itens da NotaFiscal. Foi criada uma chave no appconfig para definir o path onde o XML dever√° ser salvo seguindo instru√ß√µes contidas no documento.
+
+Na classe NotaFiscalRepository foram adicionados os m√©todos para salvar a NotaFiscal.  Foi criada a classe NotaFiscalItemRepository para salvar os Itens utilizando as procedures anexadas no projeto. Por se tratar de uma aplica√ß√£o simples os m√©todos foram implementados com SqlConnection e SqlCommand para execu√ß√£o das chamadas, a interface IDisposable foi implementada garantindo o fechamento das conex√µes ap√≥s utiliza√ß√£o.
+
+Novos campos foram criados na aplica√ß√£o, com os seguintes nomes: BaseIPI, AliquotaIPI, ValorIPI e Desconto, todos com suas regras de preenchimento de acordo com a documenta√ß√£o fornecida. Tamb√©m foi criado o campo Valor na tabela NotaFiscalItens, este campo existia na aplica√ß√£o mas n√£o era salvo no BD, portanto, tratava-se de um bug na aplica√ß√£o.
+
+Conforme documenta√ß√£o foi implementado o relat√≥rio P_REL_NOTA_FISCAL que exibe a soma dos campos solicitados, agrupados por CFOP.
+Foram realizadas algumas melhorias como a limpeza dos campos ao gerar o XML e tamb√©m a valida√ß√£o do preenchimento das informa√ß√µes. Os campos relacionados a UF foram substitu√≠dos por combos para facilitar o preenchimento.
+
+Para preenchimento e valida√ß√£o das informa√ß√µes referentes a UF foi criada uma classe auxiliar com um enum para facilitar a visualiza√ß√£o dos estados em quest√£o, al√©m de ser utilizado para o preenchimento das combos.
+
+Os m√©todos foram remanejados separando um pouco a responsabilidade do preenchimento das informa√ß√µes, devido ao tamanho do projeto n√£o achei necess√°rio a separa√ß√£o em camadas, mas em uma poss√≠vel refatora√ß√£o seria interessante.
+
+Por fim, foram detectados 2 bugs na aplica√ß√£o, um deles referente a alimenta√ß√£o das UFs de destino e origem que estavam trocados e outro referente aos itens da nota que n√£o eram adicionados na lista da classe NotaFiscal, ambos foram corrigidos.
+
+# N√£o foi realizada a implementa√ß√£o de testes unit√°rios para a aplica√ß√£o. 
