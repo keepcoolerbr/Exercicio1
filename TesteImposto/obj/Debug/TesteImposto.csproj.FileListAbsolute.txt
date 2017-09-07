@@ -22,3 +22,6 @@ C:\Users\jeferson.GDR7\Desktop\TesteImposto\TesteImposto\obj\Debug\TesteImposto.
 C:\Users\jeferson.GDR7\Desktop\TesteImposto\TesteImposto\obj\Debug\TesteImposto.Properties.Resources.resources
 C:\Users\jeferson.GDR7\Desktop\TesteImposto\TesteImposto\obj\Debug\TesteImposto.Report.resources
 C:\Users\jeferson.GDR7\Desktop\TesteImposto\TesteImposto\obj\Debug\TesteImposto.csproj.GenerateResource.Cache
+C:\Git\Exercicio1\TesteImposto\bin\Debug\TesteImposto.exe.config
+C:\Git\Exercicio1\TesteImposto\obj\Debug\TesteImposto.exe
+C:\Git\Exercicio1\TesteImposto\obj\Debug\TesteImposto.pdb
