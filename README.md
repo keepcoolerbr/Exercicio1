@@ -1,5 +1,5 @@
 # Exercicio1
-TesteImposto - Melhorias e Correções
+# TesteImposto - Melhorias e Correções
 
 
 Report de Atividades
@@ -20,4 +20,4 @@ Os métodos foram remanejados separando um pouco a responsabilidade do preenchim
 
 Por fim, foram detectados 2 bugs na aplicação, um deles referente a alimentação das UFs de destino e origem que estavam trocados e outro referente aos itens da nota que não eram adicionados na lista da classe NotaFiscal, ambos foram corrigidos.
 
-# Não foi realizada a implementação de testes unitários para a aplicação. 
+Não foi realizada a implementação de testes unitários para a aplicação. 
